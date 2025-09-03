@@ -46,7 +46,7 @@ namespace ISSD_TP4_DLP3_DAI5_clase03
         {
             try
             {
-                if (TextBox1.Text != "" && TextBox2.Text != "")
+                if (TextBox1.Text != "" && TextBox2.Text != "" && DropDownList1.SelectedValue != "")
                 {
                     string cadenaConexion = System.Configuration.ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
                     string sql = $@"update Usuarios set 
@@ -62,6 +62,10 @@ namespace ISSD_TP4_DLP3_DAI5_clase03
                         //cargarListBox(connection);
                         ListBox1.DataBind();
                     }
+                }
+                else
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alerta", $"alert('Complete todos los controles.');", true);
                 }
             }
             catch (Exception ex)

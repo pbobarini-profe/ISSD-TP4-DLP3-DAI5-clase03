@@ -23,6 +23,7 @@
                 Password<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                 Tipo Usuario
                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropdown">
+                    <asp:ListItem Text="--Seleccione el Tipo--" Value="" />
                 </asp:DropDownList>
             </div>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Actualizar" CssClass="btn btn-success"/>

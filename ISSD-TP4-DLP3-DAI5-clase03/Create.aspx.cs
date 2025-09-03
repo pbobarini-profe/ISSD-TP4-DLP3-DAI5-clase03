@@ -32,7 +32,7 @@ namespace ISSD_TP4_DLP3_DAI5_clase03
         {
             try
             {
-                if (TextBox1.Text != "" && TextBox2.Text != "")
+                if (TextBox1.Text != "" && TextBox2.Text != "" && DropDownList1.SelectedValue != "")
                 {
                     string cadenaConexion = System.Configuration.ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
                     string sql = $@"insert into Usuarios (username, password, IdUsuarioTipo)
@@ -43,6 +43,10 @@ namespace ISSD_TP4_DLP3_DAI5_clase03
                         connection.Open();
                         command.ExecuteNonQuery();
                     }
+                }
+                else
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alerta", $"alert('Complete todos los controles.');", true);
                 }
             }
             catch (Exception ex) {
