@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISSD-TP4-DLP3-DAI5-clase03", "ISSD-TP4-DLP3-DAI5-clase03\ISSD-TP4-DLP3-DAI5-clase03.csproj", "{A99CA927-FC18-409C-8FE0-2CDA442B157D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A99CA927-FC18-409C-8FE0-2CDA442B157D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99CA927-FC18-409C-8FE0-2CDA442B157D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99CA927-FC18-409C-8FE0-2CDA442B157D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99CA927-FC18-409C-8FE0-2CDA442B157D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE0081B5-C07E-4788-8A45-6086F576EFA4}
+	EndGlobalSection
+EndGlobal

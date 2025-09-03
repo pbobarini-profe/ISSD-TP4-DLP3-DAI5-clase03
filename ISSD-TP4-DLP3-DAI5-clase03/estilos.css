@@ -1,0 +1,7 @@
+﻿.tabla-usuarios{
+    border_spacing = 0;
+}
+.tabla-usuarios th,
+.tabla-usuarios td{
+    border: 1px solid #000000;
+}
