@@ -60,6 +60,7 @@ namespace ISSD_TP4_DLP3_DAI5_clase03
                         connection.Open();
                         command.ExecuteNonQuery();
                         //cargarListBox(connection);
+                        ListBox1.DataBind();
                     }
                 }
             }
