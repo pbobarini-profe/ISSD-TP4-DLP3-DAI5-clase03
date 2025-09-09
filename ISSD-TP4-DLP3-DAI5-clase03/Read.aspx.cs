@@ -14,7 +14,7 @@ namespace ISSD_TP4_DLP3_DAI5_clase03
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
             string sql = @"select usuarios.id as idUsuario, username, password, idUsuarioTipo, descripcion from Usuarios
-            inner join UsuarioTipos on usuariotipos.id = usuarios.id";
+            inner join UsuarioTipos on usuariotipos.id = usuarios.idUsuarioTipo";
             SqlConnection connection = new SqlConnection(cadenaConexion);
             SqlCommand command = new SqlCommand(sql, connection);
             connection.Open();
